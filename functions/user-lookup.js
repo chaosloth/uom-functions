@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 exports.handler = async function (context, event, callback) {
-  const from = event.From || "+61467601932";
+  const from = event.From || "";
   const response = new Twilio.Response();
 
   const ax = axios.create({
